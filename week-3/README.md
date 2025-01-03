@@ -24,19 +24,20 @@
 > - 자연어 이해 태스크에 적합한 사전 학습(Pre-trained) 모델
 
 ## Q4) 실제로 pre-trained 모델을 fine-tuning했을 때 loss curve은 어떻게 그려지나요? 그리고 pre-train 하지 않은 Transformer를 학습했을 때와 어떤 차이가 있나요? 
-> ### Loss Curve
-> - 아래 이미지는 pre-trained 모델을 fine-tuning했을 때의 Loss Curve와 pre-train하지 않은 Transformer의 Loss Curve를 비교한 결과입니다.
-> ### 차이점
+> ### pre-trained 모델을 fine-tuning했을 때Loss Curve
+> <img src="./images/loss_curve.png" width="800" height="600"/>
+>
+> ### pre-train 하지 않은 Transformer를 학습했을 때 차이점
 >   - #### Fine-tuned 모델:
 >     - 초기 학습 단계에서 Loss가 빠르게 감소.
 >     - 최종적으로 더 낮은 Loss와 높은 정확도를 달성.
 >   - #### on-pretrained 모델:
 >     - Loss가 천천히 감소하며 초기 학습 효율이 낮음.
 >     - 최종 성능도 Fine-tuned 모델에 비해 떨어짐.
-> ### 이유
-> - Fine-tuned 모델은 이미 대규모 데이터로 학습된 언어 표현을 활용하므로, 더 빠르고 효과적으로 수렴
-> ### 이미지 첨부
+>   - #### 이유
+>     - Fine-tuned 모델은 이미 대규모 데이터로 학습된 언어 표현을 활용하므로, 더 빠르고 효과적으로 수렴
 > #### Pre-trained와 Non-pretrained 모델의 학습 정확도 결과를 비교
-> ![Pre-trained와 Non-pretrained 모델의 학습 정확도 결과를 비교](./images/train_accuracy_comparison.png)
+> <img src="./images/train_accuracy_comparison.png" width="800" height="600"/>
+>
 > #### Pre-trained와 Non-pretrained 모델의 학습 손실 결과를 비교
-> ![Pre-trained와 Non-pretrained 모델의 학습 손실 결과를 비교](./images/train_loss_comparison.png)
+> <img src="./images/train_loss_comparison.png" width="800" height="600"/>

@@ -36,15 +36,8 @@
 ## 🖥 실행 방법
 
 ```sh
-# 가상 환경 생성 및 활성화
-conda create -n chatbot_env python=3.10 -y
-conda activate chatbot_env
-
-# 필요한 패키지 설치
-pip install -r requirements.txt
-
 # 실행
-streamlit run chatbot.py
+python -m streamlit run [6주차]기본과제.py
 ```
 
 ## 🎥 실행 화면
